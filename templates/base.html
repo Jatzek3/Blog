@@ -5,8 +5,13 @@
     <title>Jatzek3 blog</title>
 </head>
 <body>
-    <header>
+    <header><div class="nav-bar-home">
         <h1><a href="{% url 'home' %}">Jatzek3 Blog</a></h1>
+        </div>
+        <div class="nav-bar-new">
+            <a href="{% url 'post_new' %}">New Blog Post</a>
+        </div>
+
     </header>
     {% block content %}
     {% endblock content %}
