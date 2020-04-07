@@ -1,3 +1,6 @@
+- dodac możliwość dodawania komentarzy dla zalogowanych użytkowników
+- Zrobić właściwą autoryzacje i autentykjacje
+- podłączyć blog pod Gmail
 - możliwość dodawania posty tylko dla użytkownika super User
 -Dodać możliwość dodawania komentarczy do każdego posta dla zalogowanych użytkowników
 -Dodać kalendarz z rokiem i miesiącem po prawej stronie dla każdego miesiąca z rozwijanymi wpisami - trudne

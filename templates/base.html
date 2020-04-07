@@ -2,18 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Jatzek3 blog</title>
+    <title>Jatzek3 Site</title>
 </head>
 <body>
-    <div>
-    <header><div class="nav-bar-home">
-        <h1><a href="{% url 'home' %}">Jatzek3 Blog</a></h1>
-
-
+    <header>
+        <div class="nav-bar-home">
+        <h1>Greetings traveler</h1>
+        <h2><a href="{% url 'home' %}">Home</a></h2>
+        <h2><a href="{% url 'blog' %}">Blog</a></h2>
+        </div>
     </header>
+
     {% if user.is_authenticated %}
     <p> {{ user.username }}</p>
-        <a href="{% url 'post_new' %}">New Blog Post</a>
+
         <p><a href="{% url 'logout' %}">Log out</a> </p>
     {% else %}
     <p>You are not logged in</p>
@@ -23,6 +25,6 @@
     {% endif %}
     {% block content %}
     {% endblock content %}
-</div>
+
 </body>
 </html>
