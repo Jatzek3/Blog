@@ -8,18 +8,18 @@
     <div>
     <header><div class="nav-bar-home">
         <h1><a href="{% url 'home' %}">Jatzek3 Blog</a></h1>
-        </div>
-        <div class="nav-bar-new">
-            <a href="{% url 'post_new' %}">New Blog Post</a>
-        </div>
+
 
     </header>
     {% if user.is_authenticated %}
     <p> {{ user.username }}</p>
+        <a href="{% url 'post_new' %}">New Blog Post</a>
         <p><a href="{% url 'logout' %}">Log out</a> </p>
     {% else %}
     <p>You are not logged in</p>
-    <a href="{% url 'login' %}">Log IN</a>
+        <a href="{% url 'login' %}">Log IN</a>
+        <a href="{% url 'signup' %}">Sign Up</a>
+
     {% endif %}
     {% block content %}
     {% endblock content %}
